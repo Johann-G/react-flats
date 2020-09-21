@@ -11,12 +11,6 @@ class FlatList extends Component {
     return(
       <div className="flat-list">
         {flats.map(flat => {
-
-        //  return <div key={flat.name}>
-        //          <img src={Background} />
-        //          {flat.name}
-        //        </div>
-                
           return <Flat key={flat.name} name={flat.name} url={flat.imageUrl} price={flat.price} currency={flat.priceCurrency}  />
         })}
       </div>      
